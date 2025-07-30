@@ -27,7 +27,7 @@ Upload one or more files, and ask anything related to their content! 💬
 """)
 
 # ========== File Upload ==========
-uploaded_files = st.file_uploader("📄 Upload PDF(s)", type=["pdf","docx", "pptx", "txt", "csv"], accept_multiple_files=True)
+uploaded_files = st.file_uploader("📄 Upload File(s)", type=["pdf","docx", "pptx", "txt", "csv"], accept_multiple_files=True)
 
 # ========== Reset Button ==========
 if st.button("🔁 Reset Session"):
