@@ -1,0 +1,31 @@
+[settings]
+app_name = "Document Decoder"
+version = "0.1.0"
+debug = true
+description = "PDF chatbot powered by Streamlit, LangChain, and HuggingFace embeddings"
+authors = ["Karthik <karthikrachapudi87@gmail.com>"]
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit",
+    "requests",
+    "pdfplumber",
+    "python-docx",
+    "python-pptx",
+    "langchain",
+    "pymupdf",
+    "huggingface_hub"
+    "faiss-cpu",
+    "faiss-gpu",
+    
+] #csv and open() modules are built-in, no need to include them
+
+[features]
+enable_chatbot = true
+supported_formats = ["pdf", "docx","pptx", "txt", "csv"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
