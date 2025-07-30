@@ -7,3 +7,4 @@ langchain
 huggingface_hub
 langchain-community
 faiss-cpu
+sentence-transformers
