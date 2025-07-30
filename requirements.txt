@@ -1,9 +1,0 @@
-streamlit
-requests
-pymupdf
-python-docx
-python-pptx
-langchain
-huggingface_hub
-langchain-community
-faiss-cpu
