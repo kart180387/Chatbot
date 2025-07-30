@@ -1,0 +1,7 @@
+streamlit
+requests
+pymupdf
+python-docx
+python-pptx
+langchain
+huggingface_hub
