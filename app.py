@@ -34,7 +34,7 @@ if st.button("🔁 Reset Session"):
     st.session_state.clear()
     st.rerun()
 
-# ========== PDF Processing ==========
+# ========== Document Processing ==========
 @st.cache_resource(show_spinner="📚 Indexing Document(s)... Please wait.")
 def build_vector_db(uploaded_files):
     all_docs = []
@@ -105,7 +105,7 @@ def ask_deepseek(context, query):
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "HTTP-Referer": "https://chat.openai.com",
-        "X-Title": "PDF Chatbot"
+        "X-Title": "Chatbot"
     }
     messages = [
         {"role": "system", "content": "You are a helpful assistant. Use the provided context to answer questions."},
